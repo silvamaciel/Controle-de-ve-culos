@@ -38,19 +38,23 @@ O projeto utiliza um banco de dados MySQL com duas tabelas principais:
 
 ## Operações CRUD
 
-O sistema oferece operações CRUD (Create, Read, Update, Delete) para gerenciar os veículos associados aos colaboradores.
+O sistema oferece operações CRUD (Create, Read, Update, Delete) para gerenciar os veículos associados aos colaboradores e também para adicionar ou excluir colaboradores.
 
 ### Create
    - Permite que um colaborador cadastre um novo veículo (carro ou moto).
+   - Permite a adição de um novo colaborador.
 
 ### Read
    - Recupera informações sobre um veículo específico ou lista todos os veículos de um colaborador.
+   - Lista todos os colaboradores cadastrados.
 
 ### Update
    - Permite a atualização das informações de um veículo.
+   - Permite a atualização dos dados de um colaborador
 
 ### Delete
    - Permite que um colaborador remova um veículo cadastrado.
+   - Permite deletar um Colaborador junto dos seus veículos
 
 ## Implementação em Java
 
