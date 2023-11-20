@@ -1,5 +1,5 @@
 package com.veiculos.Model;
 
-public class Moto {
+public class Moto extends Veiculo {
     
 }
