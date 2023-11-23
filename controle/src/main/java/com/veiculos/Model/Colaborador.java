@@ -1,12 +1,21 @@
 package com.veiculos.Model;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 public class Colaborador {
+
+    private static final AtomicLong contadorIds = new AtomicLong(1);
+
     private Long id;
     private String nome;
     private String matricula;
     private String cnh;
 
-    public Colaborador() {
+    public Colaborador(String nome, String matricula, String cnh) {
+        this.id = contadorIds.getAndIncrement();
+        this.nome = nome;
+        this.matricula = matricula;
+        this.cnh = cnh;
     }
 
     public Colaborador(Long id, String nome, String matricula, String cnh) {
@@ -14,6 +23,7 @@ public class Colaborador {
         this.nome = nome;
         this.matricula = matricula;
         this.cnh = cnh;
+        contadorIds.set(Math.max(id, contadorIds.get()));
     }
 
     public Long getId() {
@@ -52,5 +62,4 @@ public class Colaborador {
     public String toString() {
         return "Colaborador [id=" + id + ", nome=" + nome + ", matricula=" + matricula + ", cnh=" + cnh + "]";
     }
-
 }
