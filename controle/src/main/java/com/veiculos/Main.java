@@ -1,6 +1,7 @@
 package com.veiculos;
 
 import java.util.List;
+import java.util.Map;
 
 import com.veiculos.Model.Colaborador;
 import com.veiculos.Model.Veiculo;
@@ -9,21 +10,17 @@ import com.veiculos.Utilities.JsonHandler;
 public class Main {
     public static void main(String[] args) {
         // Ler colaboradores do JSON
-        List<Colaborador> colaboradores = JsonHandler.lerColaboradoresDoJson();
+        Map<String, Colaborador> colaboradoresMap = JsonHandler.lerColaboradoresMap();
 
         // Ler veículos do JSON
-        List<Veiculo> veiculos = JsonHandler.lerVeiculosDoJson();
+        List<Veiculo> veiculos = JsonHandler.lerVeiculos();
 
         // Imprimir colaboradores
         System.out.println("Colaboradores:");
-        for (Colaborador colaborador : colaboradores) {
-            System.out.println(colaborador);
-        }
+        colaboradoresMap.values().forEach(System.out::println);
 
         // Imprimir veículos
         System.out.println("\nVeículos:");
-        for (Veiculo veiculo : veiculos) {
-            System.out.println(veiculo);
-        }
+        veiculos.forEach(System.out::println);
     }
 }

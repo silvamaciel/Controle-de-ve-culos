@@ -1,13 +1,14 @@
 package com.veiculos.Model;
 
 public class Colaborador {
-    
+
     private Long id;
     private String nome;
     private String matricula;
     private String cnh;
 
-    public Colaborador() {}
+    public Colaborador() {
+    }
 
     public Colaborador(Long id, String nome, String matricula, String cnh) {
         this.id = id;
@@ -47,6 +48,10 @@ public class Colaborador {
     public void setCnh(String cnh) {
         this.cnh = cnh;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Colaborador [id=" + id + ", nome=" + nome + ", matricula=" + matricula + ", cnh=" + cnh + "]";
+    }
+
 }

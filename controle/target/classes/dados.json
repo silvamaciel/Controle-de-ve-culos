@@ -1,0 +1,16 @@
+[ {
+  "id" : 1,
+  "nome" : "João Silva",
+  "matricula" : "AC501010",
+  "cnh" : "40028922"
+}, {
+  "id" : 2,
+  "nome" : "Maria Oliveira",
+  "matricula" : "AC501011",
+  "cnh" : "36521134"
+}, {
+  "id" : 3,
+  "nome" : "Maciel",
+  "matricula" : "AB50151013",
+  "cnh" : "654064651"
+} ]
