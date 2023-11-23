@@ -5,13 +5,15 @@ public class Colaborador {
     private Long id;
     private String nome;
     private String matricula;
+    private String cnh;
 
     public Colaborador() {}
 
-    public Colaborador(Long id, String nome, String matricula) {
+    public Colaborador(Long id, String nome, String matricula, String cnh) {
         this.id = id;
         this.nome = nome;
         this.matricula = matricula;
+        this.cnh = cnh;
     }
 
     public Long getId() {
@@ -38,5 +40,13 @@ public class Colaborador {
         this.matricula = matricula;
     }
 
+    public String getCnh() {
+        return cnh;
+    }
+
+    public void setCnh(String cnh) {
+        this.cnh = cnh;
+    }
+    
     
 }

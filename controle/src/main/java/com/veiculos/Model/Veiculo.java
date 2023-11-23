@@ -9,8 +9,9 @@ public class Veiculo {
     private String cor;
     private String ano;
     private String tipo;
-    private String cnh;
     private String renavam;
+    private String nomeColaborador;
+    private String matriculaColaborador;
 
     public Veiculo() {}
 
@@ -22,7 +23,6 @@ public class Veiculo {
         this.cor = cor;
         this.ano = ano;
         this.tipo = tipo;
-        this.cnh = cnh;
         this.renavam = renavam;
     }
 
@@ -82,20 +82,28 @@ public class Veiculo {
         this.tipo = tipo;
     }
 
-    public String getCnh() {
-        return cnh;
-    }
-
-    public void setCnh(String cnh) {
-        this.cnh = cnh;
-    }
-
     public String getRenavam() {
         return renavam;
     }
 
     public void setRenavam(String renavam) {
         this.renavam = renavam;
+    }
+
+    public String getNomeColaborador() {
+        return nomeColaborador;
+    }
+
+    public void setNomeColaborador(String nomeColaborador) {
+        this.nomeColaborador = nomeColaborador;
+    }
+
+    public String getMatriculaColaborador() {
+        return matriculaColaborador;
+    }
+
+    public void setMatriculaColaborador(String matriculaColaborador) {
+        this.matriculaColaborador = matriculaColaborador;
     }
 
     
