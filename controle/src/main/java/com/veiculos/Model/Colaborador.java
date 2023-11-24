@@ -11,6 +11,9 @@ public class Colaborador {
     private String matricula;
     private String cnh;
 
+    public Colaborador() {
+    }
+
     public Colaborador(String nome, String matricula, String cnh) {
         this.id = contadorIds.getAndIncrement();
         this.nome = nome;

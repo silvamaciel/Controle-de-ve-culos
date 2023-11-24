@@ -53,39 +53,38 @@ public class JsonHandler {
     public static void escreverColaboradoresNoJson(List<Colaborador> novosColaboradores) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            File jsonFile = new File(JSON_FILE_PATH);
-            JsonNode jsonNode = objectMapper.readTree(jsonFile);
+            JsonNode jsonNode = objectMapper.readTree(new File(JSON_FILE_PATH));
             JsonNode colaboradoresNode = jsonNode.get("colaboradores");
-    
-            List<Colaborador> colaboradoresAntigos = Arrays.asList(objectMapper.treeToValue(colaboradoresNode, Colaborador[].class));
-    
-            List<Colaborador> colaboradoresAtualizados = new ArrayList<>(colaboradoresAntigos);
+
+            Colaborador[] colaboradoresAntigos = objectMapper.treeToValue(colaboradoresNode, Colaborador[].class);
+
+            List<Colaborador> colaboradoresAtualizados = new ArrayList<>(Arrays.asList(colaboradoresAntigos));
             colaboradoresAtualizados.addAll(novosColaboradores);
-    
+
             ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
-            objectWriter.writeValue(jsonFile, colaboradoresAtualizados);
+            objectWriter.writeValue(new File(JSON_FILE_PATH), colaboradoresAtualizados);
         } catch (IOException e) {
             throw new RuntimeException("Erro ao escrever no arquivo JSON", e);
         }
     }
-    
+
     public static void escreverVeiculosNoJson(List<Veiculo> novosVeiculos) {
-        try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            File jsonFile = new File(JSON_FILE_PATH);
-            JsonNode jsonNode = objectMapper.readTree(jsonFile);
-            JsonNode veiculosNode = jsonNode.get("veiculos");
-    
-            List<Veiculo> veiculosAntigos = Arrays.asList(objectMapper.treeToValue(veiculosNode, Veiculo[].class));
-    
-            List<Veiculo> veiculosAtualizados = new ArrayList<>(veiculosAntigos);
-            veiculosAtualizados.addAll(novosVeiculos);
-    
-            ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
-            objectWriter.writeValue(jsonFile, veiculosAtualizados);
-        } catch (IOException e) {
-            throw new RuntimeException("Erro ao escrever no arquivo JSON", e);
-        }
+    try {
+        ObjectMapper objectMapper = new ObjectMapper();
+        File jsonFile = new File(JSON_FILE_PATH);
+        JsonNode jsonNode = objectMapper.readTree(jsonFile);
+        JsonNode veiculosNode = jsonNode.get("veiculos");
+
+        List<Veiculo> veiculosAntigos = Arrays.asList(objectMapper.treeToValue(veiculosNode, Veiculo[].class));
+
+        List<Veiculo> veiculosAtualizados = new ArrayList<>(veiculosAntigos);
+        veiculosAtualizados.addAll(novosVeiculos);
+
+        ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
+        objectWriter.writeValue(jsonFile, veiculosAtualizados);
+    } catch (IOException e) {
+        throw new RuntimeException("Erro ao escrever no arquivo JSON", e);
     }
-    
+}
+
 }

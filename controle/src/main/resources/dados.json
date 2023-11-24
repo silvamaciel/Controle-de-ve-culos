@@ -3,40 +3,58 @@
     {
       "id": 1,
       "nome": "João Silva",
-      "matricula": "12345",
-      "cnh": "ABCDE"
+      "matricula": "M123",
+      "cnh": "123456789"
     },
     {
       "id": 2,
-      "nome": "Maria Oliveira",
-      "matricula": "67890",
-      "cnh": "FGHIJ"
+      "nome": "Maria Souza",
+      "matricula": "M456",
+      "cnh": "987654321"
+    },
+    {
+      "id": 3,
+      "nome": "Carlos Oliveira",
+      "matricula": "M789",
+      "cnh": "456789123"
     }
   ],
   "veiculos": [
     {
       "id": 1,
-      "placa": "ABC123",
-      "modelo": "Civic",
-      "marca": "Honda",
+      "placa": "ABC1234",
+      "modelo": "Sedan",
+      "marca": "Toyota",
       "cor": "Preto",
       "ano": "2022",
       "tipo": "Carro",
       "renavam": "123456789",
-      "nomeColaborador": "João Silva",
-      "matriculaColaborador": "12345"
+      "idColaborador": 1,
+      "matriculaColaborador": "M123"
     },
     {
       "id": 2,
-      "placa": "XYZ987",
-      "modelo": "CB300",
-      "marca": "Honda",
-      "cor": "Vermelho",
+      "placa": "XYZ5678",
+      "modelo": "Hatchback",
+      "marca": "Ford",
+      "cor": "Branco",
       "ano": "2021",
-      "tipo": "Moto",
+      "tipo": "Carro",
       "renavam": "987654321",
-      "nomeColaborador": "Maria Oliveira",
-      "matriculaColaborador": "67890"
+      "idColaborador": 2,
+      "matriculaColaborador": "M456"
+    },
+    {
+      "id": 3,
+      "placa": "DEF9012",
+      "modelo": "SUV",
+      "marca": "Chevrolet",
+      "cor": "Azul",
+      "ano": "2023",
+      "tipo": "Carro",
+      "renavam": "456789012",
+      "idColaborador": 3,
+      "matriculaColaborador": "M789"
     }
   ]
 }

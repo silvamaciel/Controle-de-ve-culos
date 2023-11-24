@@ -54,11 +54,6 @@ public class InterfaceUsuario {
         } while (opcao != 5);
     }
 
-    private static void visualizarVeiculos() {
-        List<Veiculo> veiculos = JsonHandler.lerVeiculos();
-        veiculos.forEach(veiculo -> System.out.println(veiculo.getModelo()));
-    }
-
     private static void cadastrarColaborador() {
         System.out.println("\n*** Cadastro de Colaborador ***");
         System.out.print("Nome: ");
@@ -68,16 +63,12 @@ public class InterfaceUsuario {
         System.out.print("CNH: ");
         String cnh = scanner.nextLine();
     
-        // Criar um novo colaborador
-        Colaborador novoColaborador = new Colaborador(null, nome, matricula, cnh);
+        Colaborador novoColaborador = new Colaborador(nome, matricula, cnh);
     
-        // Obter a lista atual de colaboradores do JSON
         List<Colaborador> colaboradores = new ArrayList<>(JsonHandler.lerColaboradoresMap().values());
     
-        // Adicionar o novo colaborador à lista
         colaboradores.add(novoColaborador);
     
-        // Escrever a lista atualizada de colaboradores no JSON
         JsonHandler.escreverColaboradoresNoJson(colaboradores);
     
         System.out.println("Colaborador cadastrado com sucesso!");
@@ -126,12 +117,6 @@ public class InterfaceUsuario {
         }
     }
 
-    private static void visualizarColaboradores() {
-        Map<String, Colaborador> colaboradoresMap = JsonHandler.lerColaboradoresMap();
-
-        System.out.println("Colaboradores:");
-        colaboradoresMap.values().forEach(colaborador -> System.out.println(colaborador.getNome()));
-    }
 
     private static Long obterIdColaboradorPelaMatricula(String matricula) {
         Map<String, Colaborador> colaboradoresMap = JsonHandler.lerColaboradoresMap();
