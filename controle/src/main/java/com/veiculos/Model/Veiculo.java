@@ -10,7 +10,7 @@ public class Veiculo {
     private String ano;
     private String tipo;
     private String renavam;
-    private Long idColaborador;  // Adicionei um campo para armazenar o ID do colaborador
+    private Long idColaborador;
     private String matriculaColaborador;
 
 

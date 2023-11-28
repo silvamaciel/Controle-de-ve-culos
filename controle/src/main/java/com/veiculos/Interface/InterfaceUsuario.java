@@ -60,7 +60,7 @@ public class InterfaceUsuario {
         System.out.println("Colaboradores:");
         colaboradoresMap
                 .values()
-                .forEach(colaborador -> System.out.println(colaborador.getNome()));
+                .forEach(colaborador -> System.out.println(colaborador.toString()));
     }
 
     private static void visualizarVeiculos() {
@@ -143,9 +143,9 @@ public class InterfaceUsuario {
 
     private static Long obterIdColaboradorPelaMatricula(String matricula) {
         Map<String, Colaborador> colaboradoresMap = JsonHandler.lerColaboradoresMap();
-    
+
         Colaborador colaborador = colaboradoresMap.get(matricula);
-    
+
         if (colaborador != null) {
             return colaborador.getId();
         } else {
@@ -153,5 +153,5 @@ public class InterfaceUsuario {
             return null;
         }
     }
-    
+
 }
