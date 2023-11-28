@@ -1,0 +1,40 @@
+{
+    "veiculos": [
+        {
+            "id": 1,
+            "placa": "ABC1234",
+            "modelo": "Sedan",
+            "marca": "Toyota",
+            "cor": "Preto",
+            "ano": "2022",
+            "tipo": "Carro",
+            "renavam": "123456789",
+            "idColaborador": 1,
+            "matriculaColaborador": "M123"
+        },
+        {
+            "id": 2,
+            "placa": "XYZ5678",
+            "modelo": "Hatchback",
+            "marca": "Ford",
+            "cor": "Branco",
+            "ano": "2021",
+            "tipo": "Carro",
+            "renavam": "987654321",
+            "idColaborador": 2,
+            "matriculaColaborador": "M456"
+        },
+        {
+            "id": 3,
+            "placa": "DEF9012",
+            "modelo": "SUV",
+            "marca": "Chevrolet",
+            "cor": "Azul",
+            "ano": "2023",
+            "tipo": "Carro",
+            "renavam": "456789012",
+            "idColaborador": 3,
+            "matriculaColaborador": "M789"
+        }
+    ]
+}

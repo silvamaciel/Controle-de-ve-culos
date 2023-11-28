@@ -143,13 +143,15 @@ public class InterfaceUsuario {
 
     private static Long obterIdColaboradorPelaMatricula(String matricula) {
         Map<String, Colaborador> colaboradoresMap = JsonHandler.lerColaboradoresMap();
-
+    
         Colaborador colaborador = colaboradoresMap.get(matricula);
-
+    
         if (colaborador != null) {
             return colaborador.getId();
         } else {
+            System.out.println("Colaborador com a matrícula " + matricula + " não encontrado.");
             return null;
         }
     }
+    
 }

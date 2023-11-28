@@ -1,0 +1,22 @@
+{
+  "colaboradores": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "matricula": "M123",
+      "cnh": "123456789"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Souza",
+      "matricula": "M456",
+      "cnh": "987654321"
+    },
+    {
+      "id": 3,
+      "nome": "Carlos Oliveira",
+      "matricula": "M789",
+      "cnh": "456789123"
+    }
+  ]
+}
