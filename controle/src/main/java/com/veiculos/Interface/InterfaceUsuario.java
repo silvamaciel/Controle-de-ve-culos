@@ -65,7 +65,8 @@ public class InterfaceUsuario {
 
     private static void visualizarVeiculos() {
         List<Veiculo> veiculos = JsonHandler.lerVeiculos();
-        veiculos.forEach(veiculo -> System.out.println(veiculo.getPlaca()));
+        System.out.println("Veículos:");
+        veiculos.forEach(veiculo -> System.out.println(veiculo.toString()));
     }
 
     private static void cadastrarColaborador() {

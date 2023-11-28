@@ -63,6 +63,6 @@ public class Colaborador {
 
     @Override
     public String toString() {
-        return id + " | Nome= " + nome + " | Matrícula= " + matricula + " | CNH= " + cnh ;
+        return id + " | Nome= " + nome + " | Matrícula= " + matricula + " | CNH= " + cnh;
     }
 }
