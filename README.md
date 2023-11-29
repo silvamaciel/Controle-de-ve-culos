@@ -52,14 +52,6 @@ O sistema oferece a listagem e cadastro de colaboradores e carros para maior con
    - Recupera informações sobre um veículo específico ou lista todos os veículos de um colaborador.
    - Lista todos os colaboradores cadastrados.
 
-### Update
-   - Permite a atualização das informações de um veículo.
-   - Permite a atualização dos dados de um colaborador
-
-### Delete
-   - Permite que um colaborador remova um veículo cadastrado.
-   - Permite deletar um Colaborador junto dos seus veículos
-
 ## Implementação em Java
 
 O projeto utiliza JDBC para a conexão com o MySQL e implementa métodos Java para realizar operações no banco de dados. 
