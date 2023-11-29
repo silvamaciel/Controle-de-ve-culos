@@ -4,7 +4,7 @@ Este é um projeto em Java para a disciplina de POO que implementa um sistema de
 
 ## Estrutura do Projeto
 
-O projeto é composto por quatro classes principais:
+O projeto é composto por duasclasses principais:
 
 1. **Colaborador:**
    - Representa um colaborador.
