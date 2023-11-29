@@ -27,6 +27,10 @@ O projeto utiliza um banco de dados MySQL com duas tabelas principais:
 2. **Tabela Veiculos:**
    - `placa` (primary key)
    - `cor`, `ano`, `modelo`, `chn`, `crlv`, `nomeColaborador`, `matriculaColaborador` (foreign keys referenciando `Colaboradores.matricula`)
+  
+## Demonstração
+
+Link do vídeo no Youtube **https://youtu.be/xyx3dXXzgvc**
 
 ## Controle de Estacionamento
 
