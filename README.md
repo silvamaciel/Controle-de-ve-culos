@@ -65,11 +65,9 @@ O sistema pode ser utilizado por meio de uma interface gráfica ou linha de coma
 
 ## Contribuições (A - Z)
 
-- João Pedro Nery
-- Leandro Lima
-- Maciel Silva
-- Pablo França
-- Sergio Ricardo
-
-
+- João Pedro Nery | RGM: 34628649
+- Leandro Lima | RGM: 33500525
+- Maciel Silva | RGM: 34628649
+- Pablo França | RGM: 34614443
+- Sergio Ricardo | RGM: 33454736
 
