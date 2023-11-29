@@ -16,9 +16,9 @@ O projeto é composto por duasclasses principais:
    - Atributos: `cor`, `ano`, `modelo`, `placa`, `chn`, `Renavam`, `nomeColaborador`, `matriculaColaborador`.
    - Métodos: Construtores e acessadores/modificadores.
 
-## Banco de Dados (MySQL)
+## Banco de Dados (JSON)
 
-O projeto utiliza um banco de dados MySQL com duas tabelas principais:
+O projeto utiliza um Objeto JSON para simular um Banco de dados.
 
 1. **Tabela Colaboradores:**
    - `matricula` (primary key)
@@ -44,10 +44,6 @@ O sistema oferece a listagem e cadastro de colaboradores e carros para maior con
    - Recupera informações sobre um veículo específico ou lista todos os veículos de um colaborador.
    - Lista todos os colaboradores cadastrados.
 
-## Implementação em Java
-
-O projeto utiliza JDBC para a conexão com o MySQL e implementa métodos Java para realizar operações no banco de dados. 
-
 ## Interface de Usuário
 
 O sistema pode ser utilizado por meio de uma interface gráfica ou linha de comando, conforme necessário.
@@ -55,13 +51,13 @@ O sistema pode ser utilizado por meio de uma interface gráfica ou linha de coma
 ## Como Iniciar
 
 1. Clone o repositório.
-2. Configure as informações do banco de dados no arquivo de configuração.
-3. Execute a aplicação.
+2. Faça os Ajustes no Json.
+3. Execute a Classe InterfaceUsuario.java
 
 ## Dependências
 
 - Java 8 ou superior
-- MySQL
+- Json
 
 ## Contribuições (A - Z)
 
