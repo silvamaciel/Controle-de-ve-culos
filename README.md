@@ -16,18 +16,6 @@ O projeto é composto por quatro classes principais:
    - Atributos: `cor`, `ano`, `modelo`, `placa`, `chn`, `crlv`, `nomeColaborador`, `matriculaColaborador`.
    - Métodos: Construtores e acessadores/modificadores.
 
-3. **Moto:**
-   - Herda de `Veiculo`.
-   - Pode ter atributos específicos para motos.
-
-4. **Carro:**
-   - Herda de `Veiculo`.
-   - Pode ter atributos específicos para carros.
-
-4. **Bicicleta:**
-   - Herda de `Veiculo`.
-   - Pode ter atributos específicos para Bicicletas.
-
 ## Banco de Dados (MySQL)
 
 O projeto utiliza um banco de dados MySQL com duas tabelas principais:
