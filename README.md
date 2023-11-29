@@ -13,7 +13,7 @@ O projeto é composto por duasclasses principais:
 
 2. **Veiculo:**
    - Representa um veículo.
-   - Atributos: `cor`, `ano`, `modelo`, `placa`, `chn`, `crlv`, `nomeColaborador`, `matriculaColaborador`.
+   - Atributos: `cor`, `ano`, `modelo`, `placa`, `chn`, `Renavam`, `nomeColaborador`, `matriculaColaborador`.
    - Métodos: Construtores e acessadores/modificadores.
 
 ## Banco de Dados (MySQL)
