@@ -40,9 +40,9 @@ O projeto utiliza um banco de dados MySQL com duas tabelas principais:
    - `placa` (primary key)
    - `cor`, `ano`, `modelo`, `chn`, `crlv`, `nomeColaborador`, `matriculaColaborador` (foreign keys referenciando `Colaboradores.matricula`)
 
-## Operações CRUD
+## Controle de Estacionamento
 
-O sistema oferece operações CRUD (Create, Read, Update, Delete) para gerenciar os veículos associados aos colaboradores e também para adicionar ou excluir colaboradores.
+O sistema oferece a listagem e cadastro de colaboradores e carros para maior controle do estacionamento.
 
 ### Create
    - Permite que um colaborador cadastre um novo veículo (carro ou moto).
