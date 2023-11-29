@@ -116,42 +116,21 @@ public class InterfaceUsuario {
         System.out.print("Matrícula do Colaborador: ");
         String matriculaColaborador = scanner.nextLine();
 
-        Long idColaborador = obterIdColaboradorPelaMatricula(matriculaColaborador);
+        Map<String, Colaborador> colaboradoresMap = JsonHandler.lerColaboradoresMap();
+        Colaborador colaborador = colaboradoresMap.get(matriculaColaborador);
 
-        if (idColaborador != null) {
-            Veiculo novoVeiculo = new Veiculo(
-                    null,
-                    placa,
-                    modelo,
-                    marca,
-                    cor,
-                    ano,
-                    tipo,
-                    renavam,
-                    idColaborador,
-                    matriculaColaborador);
+        if (colaborador != null) {
+            
+            Veiculo novoVeiculo = new Veiculo(null, placa, modelo, marca, cor, ano, tipo, renavam,
+                    colaborador.getId(), matriculaColaborador);
 
-            List<Veiculo> veiculos = JsonHandler.lerVeiculos();
+            List<Veiculo> veiculos = new ArrayList<>();
             veiculos.add(novoVeiculo);
             JsonHandler.escreverVeiculosNoJson(veiculos);
 
             System.out.println("Veículo cadastrado com sucesso!");
         } else {
-            System.out.println(
-                    "Matrícula do colaborador não encontrada. Veículo não cadastrado.");
-        }
-    }
-
-    private static Long obterIdColaboradorPelaMatricula(String matricula) {
-        Map<String, Colaborador> colaboradoresMap = JsonHandler.lerColaboradoresMap();
-
-        Colaborador colaborador = colaboradoresMap.get(matricula);
-
-        if (colaborador != null) {
-            return colaborador.getId();
-        } else {
-            System.out.println("Colaborador com a matrícula " + matricula + " não encontrado.");
-            return null;
+            System.out.println("Matrícula do colaborador não encontrada. Veículo não cadastrado.");
         }
     }
 

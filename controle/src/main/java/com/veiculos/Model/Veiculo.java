@@ -32,7 +32,7 @@ public class Veiculo {
 
     @Override
     public String toString() {
-        return id + " | tipo: " + tipo + " | modelo: " + modelo + " | marca: " + marca +
+        return  " | tipo: " + tipo + " | modelo: " + modelo + " | marca: " + marca +
                 " | cor: " + cor + " | ano: " + ano +
                 " | placa: " + placa +
                 " | matriculaColaborador: " + matriculaColaborador;

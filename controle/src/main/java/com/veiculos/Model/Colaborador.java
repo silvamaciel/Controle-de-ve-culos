@@ -4,7 +4,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class Colaborador {
 
-    private static final AtomicLong contadorIds = new AtomicLong(1);
 
     private Long id;
     private String nome;
@@ -15,18 +14,10 @@ public class Colaborador {
     }
 
     public Colaborador(String nome, String matricula, String cnh) {
-        this.id = contadorIds.getAndIncrement();
+        this.id = new AtomicLong().incrementAndGet();
         this.nome = nome;
         this.matricula = matricula;
         this.cnh = cnh;
-    }
-
-    public Colaborador(Long id, String nome, String matricula, String cnh) {
-        this.id = id;
-        this.nome = nome;
-        this.matricula = matricula;
-        this.cnh = cnh;
-        contadorIds.set(Math.max(id, contadorIds.get()));
     }
 
     public Long getId() {

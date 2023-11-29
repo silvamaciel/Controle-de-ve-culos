@@ -35,6 +35,18 @@
             "renavam": "456789012",
             "idColaborador": 3,
             "matriculaColaborador": "M789"
+        },
+        {
+            "id": 4,
+            "placa": "QYK5B123",
+            "modelo": "MOTO",
+            "marca": "BIZ",
+            "cor": "BRANCA",
+            "ano": "2022",
+            "tipo": "MOTO",
+            "renavam": "3216543",
+            "idColaborador": 1,
+            "matriculaColaborador": "M123"
         }
     ]
 }
